@@ -118,6 +118,20 @@ public class listaExercicios {
 		gravarArq.printf("+-------------+%n");
 		arq.close();
 	}
+	
+	//Exercicio 2 - 4
+	@Test
+	public void lerArquivo() throws IOException {
+		FileReader     arq    = new FileReader("d://arquivo.txt");
+		BufferedReader lerArq = new BufferedReader(arq);
+		String         linha  = lerArq.readLine();
+		
+		while(linha!=null) {
+			System.out.printf("%s\n", linha);
+			linha = lerArq.readLine();
+		}
+		arq.close();
+	}
 		
 		
 }
