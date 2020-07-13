@@ -42,6 +42,7 @@ public class listaExercicios {
 		return elemento.matches("[0-9]+");
 	}
 	
+	//Exercicio 2 -1
 	@Test
 	public void consultarCarrosUsados() {
 		String   retorno;
@@ -72,6 +73,7 @@ public class listaExercicios {
         }		
 	}
 	
+	//Exercicio 2 - 2 
 	@Test
 	public void validarAno() {
 		consultarCarrosUsados();
@@ -83,6 +85,7 @@ public class listaExercicios {
 		System.out.println(driver.findElement(By.xpath("//li[@id=\"ac29842743\"]//a[@class=\"clearfix\"]//h3[@class=\"direita preco_anuncio\"]")).getText());
 	}
 	
+	//Exercicio 2 - 3
 	@Test
 	public void criarArquivo() throws IOException {
 		
